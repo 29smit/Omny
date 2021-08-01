@@ -1,4 +1,5 @@
 
+Line wrap￼
 <!DOCTYPE html>
 <html>
 
@@ -10,9 +11,9 @@
 
     <title>OMNY Cell – Net Limited</title>
 
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
+    <meta name="keywords" content="OMNY Cell – Net Limited" />
+    <meta name="description" content="OMNY Cell – Net Limited">
+    <meta name="author" content="Siddhartha Mehta">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -25,38 +26,12 @@
     <link id="googleFonts"
         href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap"
         rel="stylesheet" type="text/css">
-
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="vendor/animate/animate.compat.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/theme-elements.css">
-    <link rel="stylesheet" href="css/theme-blog.css">
-    <link rel="stylesheet" href="css/theme-shop.css">
-
-    <!-- Demo CSS -->
-    <link rel="stylesheet" href="css/demos/demo-business-consulting-3.css">
-
-    <!-- Skin CSS -->
-    <link id="skinCSS" rel="stylesheet" href="css/skins/skin-business-consulting-3.css">
-
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    
-    
-
+    <link rel="stylesheet" href="css/app.css">
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js" defer></script>
-
+    <script src="https://kit.fontawesome.com/71f557782d.js" crossorigin="anonymous" defer></script>
 
     
     <!-- Vendor -->
@@ -74,7 +49,6 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js" defer></script>
     <script src="vendor/vide/jquery.vide.min.js" defer></script>
     <script src="vendor/vivus/vivus.min.js" defer></script>
-
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js" defer></script>
 
@@ -90,13 +64,13 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRyF49Juugp1uiPmbXR03jiRGws5auXok" defer></script>
     <script defer>
         /*
-    			Map Settings
+        			Map Settings
 
-    				Find the Latitude and Longitude of your address:
-    					- https://www.latlong.net/
-    					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+        				Find the Latitude and Longitude of your address:
+        					- https://www.latlong.net/
+        					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
 
-    			*/
+        			*/
 
         function initializeGoogleMaps() {
             // Map Initial Location
@@ -272,18 +246,20 @@
             $('#googlemaps').gMap("centerAt", options);
         }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" integrity="sha512-G3jAqT2eM4MMkLMyQR5YBhvN5/Da3IG6kqgYqU9zlIH4+2a+GuMdLb5Kpxy6ItMdCfgaKlo2XFhI0dHtMJjoRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"
+        integrity="sha512-G3jAqT2eM4MMkLMyQR5YBhvN5/Da3IG6kqgYqU9zlIH4+2a+GuMdLb5Kpxy6ItMdCfgaKlo2XFhI0dHtMJjoRw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         Turbolinks.start();
         document.addEventListener("turbolinks:load", function() {
             init();
             initializeGoogleMaps();
-			// theme.fn.intObs( '#googlemaps2', 'initializeGoogleMaps()', {} );
+            // theme.fn.intObs( '#googlemaps2', 'initializeGoogleMaps()', {} );
         })
     </script>
 </head>
 
-<body data-plugin-cursor-effect data-barba="wrapper">
+<body data-plugin-cursor-effect>
     <div class="body">
         <header id="header" class="header-effect-shrink"
             data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 85}">
@@ -373,7 +349,7 @@
                                         <nav class="collapse">
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li>
-                                                    <a class="nav-link active" href="index.html">
+                                                    <a class="nav-link" href="index.html">
                                                         Home
                                                     </a>
                                                 </li>
@@ -388,20 +364,15 @@
                                                     </a>
                                                     <ul class="dropdown-menu">
                                                         <li>
-                                                            <a href="services-detail.html"
-                                                                class="dropdown-item">Telecom</a>
+                                                            <a href="telecom.html"
+                                                                class="dropdown-item">Telecommunications</a>
                                                         </li>
                                                         <li>
-                                                            <a href="services-detail.html" class="dropdown-item">Optic
-                                                                Cables</a>
+                                                            <a href="power.html" class="dropdown-item">Power</a>
                                                         </li>
                                                         <li>
-                                                            <a href="services-detail.html"
-                                                                class="dropdown-item">Operations</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="services-detail.html" class="dropdown-item">Cost
-                                                                Transformation</a>
+                                                            <a href="software.html"
+                                                                class="dropdown-item">Software</a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -435,14 +406,16 @@
                             class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row">
                             <a href="brochure.pdf"
                                 class="btn btn-primary custom-btn-style-1 font-weight-semibold text-3-5 btn-px-3 py-2 ws-nowrap ms-4 d-none d-lg-block"
-                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light" download><span>Brochure</span></a>
+                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"
+                                download><span>Brochure</span></a>
                         </div>
                         <div
                             class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row">
                             <a href="contact.html"
                                 class="btn btn-dark custom-btn-style-1 font-weight-semibold text-3-5 btn-px-3 py-2 ws-nowrap ms-4 d-none d-lg-block"
-                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Contact Us</span></a>
-                           
+                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Contact
+                                    Us</span></a>
+
                             <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
                                 data-bs-target=".header-nav-main nav">
                                 <i class="fas fa-bars"></i>
@@ -453,7 +426,7 @@
             </div>
         </header>
 
-        <main class="main" role="main" data-barba="container">
+        <main class="main" role="main">
             <div role="main" class="main">
 
     <section class="section section-with-shape-divider page-header page-header-modern page-header-lg border-0 my-0 lazyload" data-bg-src="img/demos/business-consulting-3/backgrounds/background-5.jpg" style="background-size: cover; background-position: center;">
@@ -464,7 +437,7 @@
                 </div>
                 <div class="col-md-12 align-self-center order-1">
                     <ul class="breadcrumb d-block text-center">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active">Contact Us</li>
                     </ul>
                 </div>
@@ -743,7 +716,6 @@
             </div>
         </footer>
     </div>
-    
 
 </body>
 

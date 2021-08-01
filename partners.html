@@ -10,9 +10,9 @@
 
     <title>OMNY Cell – Net Limited</title>
 
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
+    <meta name="keywords" content="OMNY Cell – Net Limited" />
+    <meta name="description" content="OMNY Cell – Net Limited">
+    <meta name="author" content="Siddhartha Mehta">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -25,38 +25,12 @@
     <link id="googleFonts"
         href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap"
         rel="stylesheet" type="text/css">
-
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="vendor/animate/animate.compat.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/theme-elements.css">
-    <link rel="stylesheet" href="css/theme-blog.css">
-    <link rel="stylesheet" href="css/theme-shop.css">
-
-    <!-- Demo CSS -->
-    <link rel="stylesheet" href="css/demos/demo-business-consulting-3.css">
-
-    <!-- Skin CSS -->
-    <link id="skinCSS" rel="stylesheet" href="css/skins/skin-business-consulting-3.css">
-
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    
-    
-
+    <link rel="stylesheet" href="css/app.css">
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js" defer></script>
-
+    <script src="https://kit.fontawesome.com/71f557782d.js" crossorigin="anonymous" defer></script>
 
     
     <!-- Vendor -->
@@ -74,7 +48,6 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js" defer></script>
     <script src="vendor/vide/jquery.vide.min.js" defer></script>
     <script src="vendor/vivus/vivus.min.js" defer></script>
-
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js" defer></script>
 
@@ -90,13 +63,13 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRyF49Juugp1uiPmbXR03jiRGws5auXok" defer></script>
     <script defer>
         /*
-    			Map Settings
+        			Map Settings
 
-    				Find the Latitude and Longitude of your address:
-    					- https://www.latlong.net/
-    					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+        				Find the Latitude and Longitude of your address:
+        					- https://www.latlong.net/
+        					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
 
-    			*/
+        			*/
 
         function initializeGoogleMaps() {
             // Map Initial Location
@@ -272,18 +245,20 @@
             $('#googlemaps').gMap("centerAt", options);
         }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" integrity="sha512-G3jAqT2eM4MMkLMyQR5YBhvN5/Da3IG6kqgYqU9zlIH4+2a+GuMdLb5Kpxy6ItMdCfgaKlo2XFhI0dHtMJjoRw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js"
+        integrity="sha512-G3jAqT2eM4MMkLMyQR5YBhvN5/Da3IG6kqgYqU9zlIH4+2a+GuMdLb5Kpxy6ItMdCfgaKlo2XFhI0dHtMJjoRw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         Turbolinks.start();
         document.addEventListener("turbolinks:load", function() {
             init();
             initializeGoogleMaps();
-			// theme.fn.intObs( '#googlemaps2', 'initializeGoogleMaps()', {} );
+            // theme.fn.intObs( '#googlemaps2', 'initializeGoogleMaps()', {} );
         })
     </script>
 </head>
 
-<body data-plugin-cursor-effect data-barba="wrapper">
+<body data-plugin-cursor-effect>
     <div class="body">
         <header id="header" class="header-effect-shrink"
             data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 85}">
@@ -373,7 +348,7 @@
                                         <nav class="collapse">
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li>
-                                                    <a class="nav-link active" href="index.html">
+                                                    <a class="nav-link" href="index.html">
                                                         Home
                                                     </a>
                                                 </li>
@@ -388,25 +363,20 @@
                                                     </a>
                                                     <ul class="dropdown-menu">
                                                         <li>
-                                                            <a href="services-detail.html"
-                                                                class="dropdown-item">Telecom</a>
+                                                            <a href="telecom.html"
+                                                                class="dropdown-item">Telecommunications</a>
                                                         </li>
                                                         <li>
-                                                            <a href="services-detail.html" class="dropdown-item">Optic
-                                                                Cables</a>
+                                                            <a href="power.html" class="dropdown-item">Power</a>
                                                         </li>
                                                         <li>
-                                                            <a href="services-detail.html"
-                                                                class="dropdown-item">Operations</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="services-detail.html" class="dropdown-item">Cost
-                                                                Transformation</a>
+                                                            <a href="software.html"
+                                                                class="dropdown-item">Software</a>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a class="nav-link" href="partners.html">
+                                                    <a class="nav-link active" href="partners.html">
                                                         Partners
                                                     </a>
                                                 </li>
@@ -435,14 +405,16 @@
                             class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row">
                             <a href="brochure.pdf"
                                 class="btn btn-primary custom-btn-style-1 font-weight-semibold text-3-5 btn-px-3 py-2 ws-nowrap ms-4 d-none d-lg-block"
-                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light" download><span>Brochure</span></a>
+                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"
+                                download><span>Brochure</span></a>
                         </div>
                         <div
                             class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row">
                             <a href="contact.html"
                                 class="btn btn-dark custom-btn-style-1 font-weight-semibold text-3-5 btn-px-3 py-2 ws-nowrap ms-4 d-none d-lg-block"
-                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Contact Us</span></a>
-                           
+                                data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Contact
+                                    Us</span></a>
+
                             <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
                                 data-bs-target=".header-nav-main nav">
                                 <i class="fas fa-bars"></i>
@@ -453,7 +425,7 @@
             </div>
         </header>
 
-        <main class="main" role="main" data-barba="container">
+        <main class="main" role="main">
             <div role="main" class="main" data-barba="container" data-barba-namespace="partners">
 
     <section class="section section-with-shape-divider page-header page-header-modern page-header-lg border-0 my-0 lazyload" data-bg-src="img/demos/business-consulting-3/backgrounds/background-5.jpg" style="background-size: cover; background-position: center;">
@@ -464,7 +436,7 @@
                 </div>
                 <div class="col-md-12 align-self-center order-1">
                     <ul class="breadcrumb d-block text-center">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active">Partners</li>
                     </ul>
                 </div>
@@ -484,59 +456,60 @@
                 <p class="text-3-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate posuere tortor luctus vulputate. Cras laoreet pretium blandit. Vestibulum luctus laoreet lacinia. Maecenas luctus arcu ut orci lacinia ultrices. </p>
             </div>
         </div>
-       
-        <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-    <div class="col-md-5 col-lg-3 mb-4 mb-lg-0">
-        <div class="bg-light custom-box-shadow-1 text-center py-5">
-            <img class="d-inline-block img-fluid py-5 my-5" src="img/logos/salasar.png" alt="" style="max-width: 140px;" />
+        <div class="row">
+        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
+    <div class="mb-4 mb-lg-0">
+        <div class="bg-light custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
+            <img class="m-auto" src="img/logos/salasar.png" alt="" style="width: 140px;" />
         </div>
     </div>
-    <div class="col-md-7 col-lg-4 mb-4 mb-lg-0">
-        <h2 class="text-color-primary text-5-5 mb-3">
+    <div class="mb-4 mt-2 mb-lg-0">
+        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
             <strong class="font-weight-medium">
-            <a href="https://www.salasartechno.com/">SALASAR TECHNO ENGINEERING LTD.</a></strong> 
+            <a href="https://www.salasartechno.com/" target="_blank">Salasar Techno Engineering Ltd.</a></strong> 
         </h2>
-        <ul class="list list-unstyled mb-0">
-            <li class="text-4 mb-4">
-                <strong class="font-weight-semibold text-color-dark">Industry: </strong> 
-                Telecommunications, Smart City Solutions, Poles, Renewable Energy
-            </li>
-            <li class="text-4 mb-4">
-                <strong class="font-weight-semibold text-color-dark">Established: </strong> 
-                2006
-            </li>
-            <li class="text-4 mb-4">
-                <strong class="font-weight-semibold text-color-dark">Registered Office: </strong> 
-                E-20, South Extension - I, New Delhi – 110049
-            </li>
-            <li class="text-4 mb-4">
-                <strong class="font-weight-semibold text-color-dark">Website: </strong> 
-                <a href="https://www.salasartechno.com/">https://www.salasartechno.com/</a>
-            </li>
-        </ul>
-    </div>
-    <div class="col-lg-5">
-        <blockquote class="custom-blockquote-style-1 m-0 pt-1 pb-2">
-            <div class="custom-read-more-style-1" data-plugin-readmore 
-            data-plugin-options="{
-                'buttonOpenLabel': 'View More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
-                'buttonCloseLabel': 'View Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
-                'maxHeight': 300
-            }">
-                <p>In the year 2006, Salasar started out as a tower manufacturer with the vision of transforming the industry. Tower manufacturers rarely provided multiple solutions under one roof. Salasar sought to fill this gap by aspiring to become a one-stop shop for India’s telecom giants by carrying out engineering, designing, procurement, fabrication, galvanization and EPC under one roof. Owing to their persistence, expertise, and capability to work wonders with steel, today we are no longer confined to towers and have expanded their range of products and services to encompass all the infrastructural needs of a rapidly developing nation.</p>
-                <div class="readmore-button-wrapper d-none">
-                    <a href="#" class="text-decoration-none">
-                        Read More
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
-                </div>
-            </div>
-        </blockquote>
     </div>
 </div>
-<div class="py-5">
-    <hr>
-</div>       
+        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
+    <div class="mb-4 mb-lg-0">
+        <div class="bg-dark custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
+            <img class="m-auto" src="img/logos/rm.png" alt="" style="width: 140px;" />
+        </div>
+    </div>
+    <div class="mb-4 mt-2 mb-lg-0">
+        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
+            <strong class="font-weight-medium">
+            <a href="https://www.rdm.com/" target="_blank">R&amp;M (Reichle &amp; De-Massari AG)</a></strong> 
+        </h2>
+    </div>
+</div>
+        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
+    <div class="mb-4 mb-lg-0">
+        <div class="bg-light custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
+            <img class="m-auto" src="img/logos/sm.png" alt="" style="width: 140px;" />
+        </div>
+    </div>
+    <div class="mb-4 mt-2 mb-lg-0">
+        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
+            <strong class="font-weight-medium">
+            <a href="https://www.smcel.com/" target="_blank">SM Creative Electronics Ltd.</a></strong> 
+        </h2>
+    </div>
+</div>
+        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
+    <div class="mb-4 mb-lg-0">
+        <div class="bg-light custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
+            <img class="m-auto" src="img/logos/coslight.webp" alt="" style="width: 140px;" />
+        </div>
+    </div>
+    <div class="mb-4 mt-2 mb-lg-0">
+        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
+            <strong class="font-weight-medium">
+            <a href="https://www.coslightindia.in/" target="_blank">Coslight</a></strong> 
+        </h2>
+    </div>
+</div>
+        </div>
     </div>
 
     <section class="section section-with-shape-divider position-relative bg-dark border-0 m-0">
@@ -699,7 +672,6 @@
             </div>
         </footer>
     </div>
-    
 
 </body>
 
