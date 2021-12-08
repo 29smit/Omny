@@ -1,4 +1,7 @@
-
+<?php
+ 
+ define('BASE_URL','http://localhost/omny/');
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>OMNY Cell – Net Limited</title>
+    <title><?php echo $title; ?>|Ethio Omny Trading Plc</title>
 
     <meta name="keywords" content="OMNY Cell – Net Limited" />
     <meta name="description" content="OMNY Cell – Net Limited">
@@ -63,13 +66,13 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRyF49Juugp1uiPmbXR03jiRGws5auXok" defer></script>
     <script defer>
         /*
-        			Map Settings
+                    Map Settings
 
-        				Find the Latitude and Longitude of your address:
-        					- https://www.latlong.net/
-        					- http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
+                        Find the Latitude and Longitude of your address:
+                            - https://www.latlong.net/
+                            - http://www.findlatitudeandlongitude.com/find-address-from-latitude-and-longitude/
 
-        			*/
+                    */
 
         function initializeGoogleMaps() {
             // Map Initial Location
@@ -280,7 +283,7 @@
                                                     </span>
                                                     <a class="text-color-light text-decoration-none font-weight-semibold text-3-5 ms-2"
                                                         href="tel:1234567890" data-cursor-effect-hover="plus"
-                                                        data-cursor-effect-hover-color="light">(800) 123-4567</a>
+                                                        data-cursor-effect-hover-color="light">+291 7 128 438</a>
                                                 </span>
                                                 <span
                                                     class="font-weight-normal align-items-center px-0 d-none d-xl-flex ms-3">
@@ -293,7 +296,7 @@
                                                     <a class="text-color-light text-decoration-none font-weight-semibold text-3-5 ms-2"
                                                         href="mailto:business@portotheme.com"
                                                         data-cursor-effect-hover="plus"
-                                                        data-cursor-effect-hover-color="light">info@omny.com</a>
+                                                        data-cursor-effect-hover-color="light">info@ethioomny.com</a>
                                                 </span>
                                             </li>
                                         </ul>
@@ -333,9 +336,9 @@
                         <div class="header-column">
                             <div class="header-row">
                                 <div class="header-logo">
-                                    <a href="index.html">
-                                        <img alt="Porto" width="162" height="33"
-                                            src="img/demos/business-consulting-3/logo.png">
+                                    <a href="<?php echo BASE_URL."index.php"; ?>">
+                                        <img alt="Porto" width="47%" height="47%"
+                                            src="img/logo.png">
                                     </a>
                                 </div>
                             </div>
@@ -348,50 +351,50 @@
                                         <nav class="collapse">
                                             <ul class="nav nav-pills" id="mainNav">
                                                 <li>
-                                                    <a class="nav-link" href="index.html">
+                                                    <a class="nav-link active" href="<?php echo BASE_URL."index.php"?>">
                                                         Home
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a class="nav-link" href="about.html">
+                                                    <a class="nav-link" href="<?php echo BASE_URL."about.php"?>">
                                                         About Us
                                                     </a>
                                                 </li>
                                                 <li class="dropdown">
-                                                    <a class="nav-link dropdown-toggle" href="services.html">
+                                                    <a class="nav-link dropdown-toggle" href="<?php echo BASE_URL."services.php"?>">
                                                         Services
                                                     </a>
                                                     <ul class="dropdown-menu">
                                                         <li>
-                                                            <a href="telecom.html"
+                                                            <a href="<?php echo BASE_URL."telecom.php"?>"
                                                                 class="dropdown-item">Telecommunications</a>
                                                         </li>
                                                         <li>
-                                                            <a href="power.html" class="dropdown-item">Power</a>
+                                                            <a href="<?php echo BASE_URL."power.php"?>" class="dropdown-item">Power</a>
                                                         </li>
                                                         <li>
-                                                            <a href="software.html"
+                                                            <a href="<?php echo BASE_URL."software.php"?>"
                                                                 class="dropdown-item">Software</a>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a class="nav-link active" href="partners.html">
+                                                    <a class="nav-link" href="<?php echo BASE_URL."partners.php"?>">
                                                         Partners
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a class="nav-link" href="team.html">
+                                                    <a class="nav-link" href="<?php echo BASE_URL."team.php"?>">
                                                         Team
                                                     </a>
                                                 </li>
                                                 <li class="d-lg-none">
-                                                    <a class="nav-link" href="brochure.pdf" download>
+                                                    <a class="nav-link" href="<?php echo BASE_URL."brochure.pdf"?>" download>
                                                         Brochure
                                                     </a>
                                                 </li>
                                                 <li class="d-lg-none">
-                                                    <a class="nav-link" href="contact.html">
+                                                    <a class="nav-link" href="<?php echo BASE_URL."contact.php"?>">
                                                         Contact Us
                                                     </a>
                                                 </li>
@@ -403,14 +406,14 @@
                         </div>
                         <div
                             class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row">
-                            <a href="brochure.pdf"
+                            <a href="<?php echo BASE_URL."brochure.pdf"?>"
                                 class="btn btn-primary custom-btn-style-1 font-weight-semibold text-3-5 btn-px-3 py-2 ws-nowrap ms-4 d-none d-lg-block"
                                 data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"
                                 download><span>Brochure</span></a>
                         </div>
                         <div
                             class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row">
-                            <a href="contact.html"
+                            <a href="<?php echo BASE_URL."contact.php"?>"
                                 class="btn btn-dark custom-btn-style-1 font-weight-semibold text-3-5 btn-px-3 py-2 ws-nowrap ms-4 d-none d-lg-block"
                                 data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span>Contact
                                     Us</span></a>
@@ -424,255 +427,3 @@
                 </div>
             </div>
         </header>
-
-        <main class="main" role="main">
-            <div role="main" class="main" data-barba="container" data-barba-namespace="partners">
-
-    <section class="section section-with-shape-divider page-header page-header-modern page-header-lg border-0 my-0 lazyload" data-bg-src="img/demos/business-consulting-3/backgrounds/background-5.jpg" style="background-size: cover; background-position: center;">
-        <div class="container pb-5 my-3">
-            <div class="row mb-4">
-                <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="font-weight-bold text-color-dark text-10">Partners</h1>
-                </div>
-                <div class="col-md-12 align-self-center order-1">
-                    <ul class="breadcrumb d-block text-center">
-                        <li><a href="/">Home</a></li>
-                        <li class="active">Partners</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="shape-divider shape-divider-bottom shape-divider-reverse-x" style="height: 123px;">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 123" preserveAspectRatio="xMinYMin">
-                <polygon fill="#F3F3F3" points="0,90 221,60 563,88 931,35 1408,93 1920,41 1920,-1 0,-1 "/>
-                <polygon fill="#FFFFFF" points="0,75 219,44 563,72 930,19 1408,77 1920,25 1920,-1 0,-1 "/>
-            </svg>
-        </div>
-    </section>
-    <div class="container pt-3 pb-4 mt-4 mb-5">
-        <div class="row mb-4 pb-3">
-            <div class="col">
-                <h2 class="text-9 text-lg-5 text-xl-9 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Learn more about our Partners</h2>
-                <p class="text-3-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate posuere tortor luctus vulputate. Cras laoreet pretium blandit. Vestibulum luctus laoreet lacinia. Maecenas luctus arcu ut orci lacinia ultrices. </p>
-            </div>
-        </div>
-        <div class="row">
-        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-    <div class="mb-4 mb-lg-0">
-        <div class="bg-light custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
-            <img class="m-auto" src="img/logos/salasar.png" alt="" style="width: 140px;" />
-        </div>
-    </div>
-    <div class="mb-4 mt-2 mb-lg-0">
-        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
-            <strong class="font-weight-medium">
-            <a href="https://www.salasartechno.com/" target="_blank">Salasar Techno Engineering Ltd.</a></strong> 
-        </h2>
-    </div>
-</div>
-        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-    <div class="mb-4 mb-lg-0">
-        <div class="bg-dark custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
-            <img class="m-auto" src="img/logos/rm.png" alt="" style="width: 140px;" />
-        </div>
-    </div>
-    <div class="mb-4 mt-2 mb-lg-0">
-        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
-            <strong class="font-weight-medium">
-            <a href="https://www.rdm.com/" target="_blank">R&amp;M (Reichle &amp; De-Massari AG)</a></strong> 
-        </h2>
-    </div>
-</div>
-        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-    <div class="mb-4 mb-lg-0">
-        <div class="bg-light custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
-            <img class="m-auto" src="img/logos/sm.png" alt="" style="width: 140px;" />
-        </div>
-    </div>
-    <div class="mb-4 mt-2 mb-lg-0">
-        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
-            <strong class="font-weight-medium">
-            <a href="https://www.smcel.com/" target="_blank">SM Creative Electronics Ltd.</a></strong> 
-        </h2>
-    </div>
-</div>
-        <div class="align-items-center appear-animation col-md-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
-    <div class="mb-4 mb-lg-0">
-        <div class="bg-light custom-box-shadow-1 text-center py-3 d-flex" style="height: 10rem;">
-            <img class="m-auto" src="img/logos/coslight.webp" alt="" style="width: 140px;" />
-        </div>
-    </div>
-    <div class="mb-4 mt-2 mb-lg-0">
-        <h2 class="text-color-primary text-center mb-3" style="font-size: 1.2rem; line-height:1.5">
-            <strong class="font-weight-medium">
-            <a href="https://www.coslightindia.in/" target="_blank">Coslight</a></strong> 
-        </h2>
-    </div>
-</div>
-        </div>
-    </div>
-
-    <section class="section section-with-shape-divider position-relative bg-dark border-0 m-0">
-        <div class="shape-divider shape-divider-reverse-x z-index-3" style="height: 102px;">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 102" preserveAspectRatio="xMinYMin">
-                <polygon fill="#F3F3F3" points="0,65 220,35 562,63 931,10 1410,68 1920,16 1920,103 0,103 "/>
-                <polygon fill="#FFF" points="0,82 219,51 562,78 931,26 1409,83 1920,32 1920,103 0,103 "/>
-            </svg>
-        </div>
-        <div class="position-absolute top-0 right-0 overlay overlay-show overlay-color-primary overlay-op-9 h-100 lazyload d-none d-md-block" data-bg-src="img/demos/business-consulting-3/backgrounds/background-2.jpg" style="width: 32%; background-size: cover; background-position: center;"></div>
-        <div class="container">
-            <div class="row align-items-center pt-5 pb-xl-5 mt-5">
-                <div class="col-md-7 col-lg-8 py-4 my-2 ms-md-3 ms-lg-0">
-                    <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">GET IN TOUCH</h2>
-                    <h3 class="text-9 line-height-3 text-transform-none font-weight-medium text-color-light ls-0 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Send Us a Message and Learn More About Our Services</h3>
-                    <p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet. </p>
-                    <form class="contact-form form-style-4 form-placeholders-light form-errors-light appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" action="php/contact-form.php" method="POST">
-                        <div class="contact-form-success alert alert-success d-none mt-4">
-                            <strong>Success!</strong> Your message has been sent to us.
-                        </div>
-
-                        <div class="contact-form-error alert alert-danger d-none mt-4">
-                            <strong>Error!</strong> There was an error sending your message.
-                            <span class="mail-error-message text-1 d-block"></span>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col">
-                                <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="name" placeholder="* Full Name" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col">
-                                <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="email" placeholder="* Email Address" required>
-                            </div>
-                        </div>
-                        <div class="row mb-4">
-                            <div class="form-group col">
-                                <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 custom-border-color-grey-1 h-auto py-2" name="message" placeholder="* Message" required></textarea>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
-                                <button type="submit" class="btn btn-primary custom-btn-style-1 font-weight-semibold btn-px-4 btn-py-2 text-3-5" data-loading-text="Loading..." data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
-                                    <span>Send Message</span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-        </main>
-
-        <footer id="footer" class="border-top-0 m-0 lazyload"
-            data-bg-src="img/demos/business-consulting-3/backgrounds/background-4.jpg"
-            style="background-size: cover; background-position: center; background-repeat: no-repeat;">
-            <div class="container pt-3">
-                <div class="row justify-content-between align-items-center py-5 mb-3">
-                    <div class="col-auto mb-4 mb-lg-0">
-                        <h2 class="font-weight-semibold text-color-light text-10 ls-0 mb-0">OMNY Cell – Net Limited</h2>
-                    </div>
-                    <div class="col-auto">
-                        <a href="contact.html"
-                            class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4"
-                            data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
-                            <span class="text-color-light">Contact Us</span>
-                        </a>
-                    </div>
-                </div>
-                <hr class="bg-color-light opacity-1 my-0">
-                <div class="row pt-3 mt-5">
-                    <div class="col-lg-3 mb-4 mb-lg-0">
-                        <a href="index.html" class="text-decoration-none">
-                            <img src="img/demos/business-consulting-3/logo-footer.png" class="img-fluid mb-4"
-                                width="123" height="33" alt="" />
-                        </a>
-                        <p class="text-3-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula
-                            leo, vel efficitur fel. </p>
-                        <ul
-                            class="social-icons social-icons-clean social-icons-clean-with-border social-icons-medium social-icons-icon-light">
-                            <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank"
-                                    title="Facebook" data-cursor-effect-hover="fit"><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                            <li class="social-icons-twitter mx-2"><a href="http://www.twitter.com/" target="_blank"
-                                    title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank"
-                                    title="Linkedin" data-cursor-effect-hover="fit"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 mb-4 mb-lg-0">
-                        <ul class="list list-icons list-icons-lg">
-                            <li class="d-flex px-0 mb-1">
-                                <img width="25" src="img/demos/business-consulting-3/icons/phone.svg" alt="Phone Icon"
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
-                                <a href="tel:8001234567"
-                                    class="text-color-light font-weight-semibold text-3-4 ms-2">(800) 123-4567</a>
-                            </li>
-                            <li class="d-flex px-0 my-3">
-                                <img width="25" src="img/demos/business-consulting-3/icons/email.svg" alt="Email Icon"
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
-                                <a href="mailto:info@omny.com"
-                                    class="text-color-light font-weight-semibold text-3-4 ms-2">info@omny.com</a>
-                            </li>
-                            <li class="d-flex font-weight-semibold text-color-light px-0 mb-1">
-                                <img width="25" src="img/demos/business-consulting-3/icons/map-pin.svg" alt="Location"
-                                    data-icon
-                                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light me-2'}" />
-                                Alfoz plaza Gerji Road,<br> Near imperial hotel, <br> 7 th floor, No. 2, <br> Addis
-                                Ababa, Ethiopia
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 mb-4 mb-lg-0">
-                        <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-                        <div id="googlemaps" class="google-map m-0" style="height: 190px;"></div>
-                    </div>
-                    <div class="col-lg-2">
-                        <h4 class="font-weight-bold text-5">Useful Links</h4>
-                        <ul class="list list-icons list-icons-sm">
-                            <li>
-                                <i class="fas fa-angle-right text-color-default"></i>
-                                <a href="contact.html" class="link-hover-style-1 ms-1"> Contact Us</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-angle-right text-color-default"></i>
-                                <a href="services.html" class="link-hover-style-1 ms-1"> Our Services</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-angle-right text-color-default"></i>
-                                <a href="#" class="link-hover-style-1 ms-1"> Payment Methods</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-angle-right text-color-default"></i>
-                                <a href="#" class="link-hover-style-1 ms-1"> Services Guide</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-angle-right text-color-default"></i>
-                                <a href="#" class="link-hover-style-1 ms-1"> FAQs</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright container bg-transparent">
-                <div class="row pb-5">
-                    <div class="col-lg-12 text-center m-0">
-                        <hr class="bg-color-light opacity-1 mt-5 mb-4">
-                        <p class="text-3-4">Porto Business Consulting. © 2021. All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-</body>
-
-</html>
